@@ -1,0 +1,32 @@
+---
+title: "8kyu problems"
+description: "This is the meta description"
+---
+
+# Problem 1
+
+Remove a exclamation mark from the end of string. For a beginner kata, you can assume that the input data is always a string, no need to verify it.
+
+example:
+
+```python
+remove("Hi!") === "Hi"
+remove("Hi!!!") === "Hi!!"
+remove("!Hi") === "!Hi"
+remove("!Hi!") === "!Hi"
+remove("Hi! Hi!") === "Hi! Hi"
+remove("Hi") === "Hi"
+```
+
+# Problem 2
+
+Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result.
+
+It should remove all values from list a, which are present in list b.
+
+```python
+array_diff([1,2],[1]) == [2]
+If a value is present in b, all of its occurrences must be removed from the other:
+
+array_diff([1,2,2,2,3],[2]) == [1,3]
+```
