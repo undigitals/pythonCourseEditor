@@ -1,11 +1,11 @@
 ---
-title: "8kyu problems"
+title: "8k problems"
 description: "This is the meta description"
 ---
 
 # Problem 1
 
-Remove a exclamation mark from the end of string. For a beginner kata, you can assume that the input data is always a string, no need to verify it.
+Remove a exclamation mark from the end of string. For a beginner, you can assume that the input data is always a string, no need to verify it.
 
 example:
 
@@ -20,7 +20,7 @@ remove("Hi") === "Hi"
 
 # Problem 2
 
-Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result.
+Your goal in this problem is to implement a difference function, which subtracts one list from another and returns the result.
 
 It should remove all values from list a, which are present in list b.
 
@@ -29,4 +29,39 @@ array_diff([1,2],[1]) == [2]
 If a value is present in b, all of its occurrences must be removed from the other:
 
 array_diff([1,2,2,2,3],[2]) == [1,3]
+```
+
+# Problem 3
+
+Simple challenge - eliminate all bugs from the supplied code so that the code runs and outputs the expected value. Output should be the length of the longest word, as a number.
+
+There will only be one 'longest' word.
+
+Here is the code:
+
+```python
+def find_longest(string):
+spl = str.split(" ")
+longest = 0
+i=0
+while (i > spl.length):
+if (spl(i).length > longest): longest = spl[i].length
+return longest
+```
+
+# Problem 4
+
+You are given a list of character sequences as a comma separated string.
+Write a function which returns another string containing all the character sequences except the first and the
+last ones, separated by spaces. If the input string is empty, or the removal of the first and last items would
+cause the string to be empty, return a null value.
+
+example:
+
+```python
+(array(''), None)
+(array('1'), None)
+(array('1, 3'), None)
+(array('1,2,3'), '2')
+(array('1,2,3,4'), '2 3')
 ```
