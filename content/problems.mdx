@@ -56,7 +56,7 @@ Write a function which returns another string containing all the character seque
 last ones, separated by spaces. If the input string is empty, or the removal of the first and last items would
 cause the string to be empty, return a null value.
 
-example:
+Example:
 
 ```python
 (array(''), None)
@@ -90,4 +90,32 @@ stock = {
 fillable(stock, 'football', 3) True
 fillable(stock, 'leggos', 2) False
 fillable(stock, 'action figure', 1) False
+```
+
+# Problem 6
+
+Write a comparator for a list of phonetic words for the letters of the greek alphabet.
+
+A comparator is:
+
+a custom comparison function of two arguments (iterable elements) which should return a negative, zero or positive number depending on whether the first argument is considered smaller than, equal to, or larger than the second argument
+
+(source: https://docs.python.org/2/library/functions.html#sorted)
+
+The greek alphabet is preloded for you as greek_alphabet:
+
+```python
+greek_alphabet = (
+    'alpha', 'beta', 'gamma', 'delta', 'epsilon', 'zeta',
+    'eta', 'theta', 'iota', 'kappa', 'lambda', 'mu',
+    'nu', 'xi', 'omicron', 'pi', 'rho', 'sigma',
+    'tau', 'upsilon', 'phi', 'chi', 'psi', 'omega')
+```
+
+Example:
+
+```python
+greek_comparator('alpha', 'beta')   <  0
+greek_comparator('psi', 'psi')      == 0
+greek_comparator('upsilon', 'rho')  >  0
 ```
