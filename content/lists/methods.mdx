@@ -1,0 +1,55 @@
+---
+title: "List Methods"
+description: "empty"
+---
+
+There are number of built-in list methods for python which are useful in number of occasions.
+
+# len()
+
+One of the most useful one is `len()` method, returns `int` for number of elements inside the list.
+
+```python
+fruits=["banana", "mango", "apple", "berry", "cocos"]
+print(len(fruits)) #5
+```
+
+Why it is useful?
+
+In the case of `fruits`, `len()` might be not that much useful, because you can count the elements inside `fruits` list.
+However, what if there are 167 elements inside the `list` or 1000, it would take some time to count them, right?
+So then `len()` will be your savior.
+
+Let's do one example task:
+
+```python
+bunchofnumbers = [1,1,1,10,10]
+```
+
+Compute the avarage integer.
+
+Try not to look at the solution below.
+
+```python
+bunchofnumbers = [1,1,1,10,10]
+av = 0
+for i in bunchofnumbers:
+  av+=i
+print(av/5) # 4.6
+```
+
+So 4.6 is an avarage value. But what if `bunchofnumbers = [1,1,1,10,10,12,13,8]` we have 8 elements inside the `list`
+the we need to change `print(av/8)`. Again, what if elements are uncountable, still we need to count? what 😄?.
+
+```python
+bunchofnumbers = [1,1,1,10,10]
+av = 0
+length = len(bunchofnumbers)
+for i in bunchofnumbers:
+  av+=i
+print(av/length) # 4.6
+```
+
+That's it!!!
+
+Now we don't have to change anything, even if the `list` is uncountable. `len()` will get us the length of the `list`.
